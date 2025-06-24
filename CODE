@@ -1,0 +1,49 @@
+import random 
+subjects = [
+    "The train",
+    "Angry Cat",
+    "Time-Traveling Lizard",
+    "AI-Powered Toaster",
+    "Sleep-Deprived Astronaut",
+    "Billionaire Hamster",
+    "Dancing Robot",
+    "Invisible Politician",
+    "Talking Pineapple",
+    "Retired Superhero",
+    "Alien Influencer"
+]
+actions = [
+    "Declares War On",
+    "Gets Arrested For",
+    "Invents New Way To",
+    "Challenges Humanity To",
+    "Spontaneously Explodes Near",
+    "Leaks Secrets About",
+    "Starts Petition To Ban",
+    "Goes Viral After",
+    "Gets Elected As",
+    "Builds a Replica Of"
+
+]
+places_or_things = [
+    "Moon Base",
+    "Coffee Machines",
+    "Social Media",
+    "Parallel Universe",
+    "Haunted Subway",
+    "Giant Rubber Duck",
+    "Quantum Fridge",
+    "Library of Time",
+    "National Meme Archive",
+    "Underwater Parliament"
+]
+while True:
+  subject = random.choice(subjects)
+  action = random.choice(actions)
+  places_or_thing = random.choice(places_or_things)
+  headline = f"BREAKING NEWS : {subject} {action} {places_or_thing}"
+  print("/n" + headline)
+  user_input = input("do you want another headline type 'y' for yes and 'n' for no ").strip().lower()
+  if user_input == "n":
+    break
+print("\n Thanks for using the fake headliner. Visit soon")
